@@ -19,7 +19,12 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge = 36;
+if (age <= 10) {
+  console.log(true) 
+   } else { 
+     console.log(false)  
+    }
 
 
 /*
