@@ -143,8 +143,9 @@ function hungryDog(years, weight){
         console.log('Weight : 6lbs - 10lbs ');
         return weight * .04;
       } else if(weight >= 11 && weight <= 15) {
-        console.log('Weight : 11lbs - 15lbs ')
-      }
+        console.log('Weight : 11lbs - 15lbs ');
+        return weight * .03;
+      } else return weight * .02;
     }
   }
 }
