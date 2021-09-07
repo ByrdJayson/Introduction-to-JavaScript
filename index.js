@@ -122,7 +122,7 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 */  
 
 function hungryDog(years, weight){
-  if(years < 1) {
+  /* if(years < 1) {
     console.log('Puppy :');
     if(years >= 0.1666666666666667 && years <= .3333333) {
       console.log('2 - 4 Months');
@@ -147,7 +147,7 @@ function hungryDog(years, weight){
         return weight * .03;
       } else return weight * .02;
     }
-  }
+  } */
 }
 
 
