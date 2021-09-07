@@ -122,30 +122,49 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 */  
 
 function hungryDog(years, weight){
+  
+  
+  /* if(years >= 1){
+    console.log('Dog')
+  }
+
+  if(years < 1){
+    console.log('Puppy')
+  }
+  
+  if(years < 4) {
+    console.log(weight * (years * .1));
+  }
+
+  if(years >= 5 && >) */
+  
+  
+  
+  
   /* if(years < 1) {
     console.log('Puppy :');
     if(years >= 0.1666666666666667 && years <= .3333333) {
       console.log('2 - 4 Months');
-      return years * (weight * .1);
+      console.log(years * (weight * .1));
     } else if (years > .3333333 && years <= .5833333333333333) {
       console.log('4 - 7 Months ');
-      return years * (weight * .05);
+      console.log(years * (weight * .05));
     } else (years > .5833333333333333 && years < 1)
       console.log('7 - 12 Months');
-      return years * (weight * .04);
+      console.log(years * (weight * .04));
   } else {
     console.log('Dog: ')
     if (years <= 1) {
       if(weight <= 5) {
         console.log('Weight : 5lbs and under');
-        return weight * .05;
+        console.log(weight * .05);
       } else if(weight < 11) {
         console.log('Weight : 6lbs - 10lbs ');
-        return weight * .04;
+        console.log(weight * .04);
       } else if(weight >= 11 && weight <= 15) {
         console.log('Weight : 11lbs - 15lbs ');
-        return weight * .03;
-      } else return weight * .02;
+        console.log(weight * .03);
+      } else console.log(weight * .02);
     }
   } */
 }
@@ -190,8 +209,9 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+  let miles = kilometers * .621371;
+  return miles;
 }
 
 
