@@ -164,20 +164,27 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 
-let rock = 0;
-let paper = 1;
-let scissors = 2;
-let user = 0;
-let computer = Math.floor(Math.random() * 3);
+
 
 function game(user, computer){
-  if(computer === user){
+  if(user === computer){
     return "it's a tie"
-  } else if (user === 0 && computer === 2){
+  } else if(user === "rock" && computer === "scissors"){
     return "you win!"
+  } else if(user === "scissors" && computer === "rock"){
+    return "you lose!"
+  } else if(user === "paper" && computer === "rock"){
+    return "you win!"
+  } else if(user === "rock" && computer === "paper"){
+    return "you lose!"
+  } else if(user === "scissors" && computer === "paper"){
+    return "you win!"
+  } else if(user === "paper" && computer === "scissors"){
+    return "you lose!"
   }
-
 }
+
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
