@@ -121,18 +121,23 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(years, weight){
+function hungryDog(weight, age){
   
-  if(years >= 1) {
+  if(age >= 1) {
     if (weight <= 5) {
-      return weight * .05
+      return .05 * weight
+    } else if (weight > 5 && weight < 10){
+      return .04 * weight
+    } else if (weight >= 11 && weight < 15){
+      return .03 * weight;
+    } else if (weight >= 15){
+      return .02 * weight
     }
+  } else if(age <= .33333333){
+    return .1 * weight
+  } else if(age >= .583){
+    return .04 * weight;
   }
-  
-  
-  
-  
-  
 }
 
 
@@ -207,7 +212,7 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(bottles){
-    
+    return `${bottles} bottles of soda on the wall, ${bottles} bottles of soda, take one down pass it around ${bottles - 1} bottles of soda on the wall`
       
 }
 
